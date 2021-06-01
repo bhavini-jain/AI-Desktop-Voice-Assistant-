@@ -33,7 +33,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("Hello i am Jarvis . Please tell me how may i help you?")
+    speak("I am Jarvis here . Please tell me how may i help you?")
 
 
 def takeCommand():
@@ -121,10 +121,6 @@ if _name_ == "_main_":
             except Exception as e:
                 print(e)
                 speak("Sorry, i am unable to send the email.")
-
-        elif 'favourite shows' in query:
-            fav_path = "<path-of-your-favourite-shows-folder>"
-            os.startfile(fav_path)
 
 
         elif 'quit' in query or 'exit' in query:
